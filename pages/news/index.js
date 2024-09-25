@@ -1,10 +1,19 @@
-import React from "react";
+import React, { Fragment } from "react";
+import Link from "next/link";
 
 function NewsPage() {
   return (
-    <div>
+    <Fragment>
       <h1>NewsPage</h1>
-    </div>
+      <ul>
+        <Link href="/news/nextjs-is-great-framework">
+          <li>NextJS is great framework</li>
+        </Link>
+
+        <li>Somthing else</li>
+        <li>NextJS is great framework</li>
+      </ul>
+    </Fragment>
   );
 }
 
